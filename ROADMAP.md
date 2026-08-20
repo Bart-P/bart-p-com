@@ -11,32 +11,32 @@ Work from top to bottom. The first unchecked item is the next task.
 - [x] Install Symfony CLI
 - [x] Check MariaDB
 - [x] Create a Contao Managed Edition project
-- [ ] Initialize Git
+- [x] Initialize Git
 - [x] Check `.gitignore`
 - [x] Confirm secrets are not tracked
 - [x] Create a database and database user
 - [x] Configure `.env.local`
 - [x] Test the database connection
 - [x] Run migrations
-- [ ] Create a backend administrator
-- [ ] Start the local server
-- [ ] Log into the backend
-- [ ] Find and inspect the Contao logs
+- [x] Create a backend administrator
+- [x] Start the local server
+- [x] Log into the backend
+- [x] Find and inspect the Contao logs
 
 ## 2. Basic Contao Website
 
-- [ ] Create a website root
-- [ ] Configure language and fallback
-- [ ] Create Home, About, and Contact pages
-- [ ] Create a theme
-- [ ] Create a navigation module
-- [ ] Create a Twig page layout
-- [ ] Add navigation to the header slot
-- [ ] Add articles to the main slot
-- [ ] Assign the layout to the website root
-- [ ] Create an article on every page
-- [ ] Add basic content elements
-- [ ] Confirm every page renders
+- [x] Create a website root
+- [x] Configure language and fallback
+- [x] Create Home, Projects, and Contact pages
+- [x] Create a theme
+- [x] Create a navigation module
+- [x] Create a Twig page layout
+- [x] Add navigation to the header slot
+- [x] Add articles to the main slot
+- [x] Assign the layout to the website root
+- [x] Create an article on every page
+- [x] Add basic content elements
+- [x] Confirm every page renders
 
 ## 3. Website Structure And Content
 
