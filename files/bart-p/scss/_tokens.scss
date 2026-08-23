@@ -1,1 +1,22 @@
 // Global design tokens such as colors, typography, spacing, and widths.
+:root {
+  // Base
+  --color-background: #11111b;
+  --color-surface: #181825;
+  --color-surface-elevated: #1e1e2e;
+  --color-text: #cdd6f4;
+  --color-text-muted: #7f849c;
+  --color-border: #313244;
+
+  // Brand and interaction
+  --color-primary: #fab387;
+  --color-primary-hover: #f9a66c;
+  --color-secondary: #89b4fa;
+  --color-secondary-hover: #74a7f0;
+  --color-accent-cyan: #89dceb;
+
+  // Feedback
+  --color-success: #a6e3a1;
+  --color-warning: #f9e2af;
+  --color-error: #f38ba8;
+}
