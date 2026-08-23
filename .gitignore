@@ -4,12 +4,17 @@
 # Composer
 /vendor/
 
+# Node
+/node_modules/
+
 # Contao Manager
 /contao-manager/
 
 # Generated folders
 /assets/
-/files/
+/files/*
+!/files/bart-p/
+!/files/bart-p/**
 /public/
 /system/*
 !/system/config/

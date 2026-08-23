@@ -1,0 +1,12 @@
+{
+  "name": "bart-p-contao",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "styles:build": "sass files/bart-p/scss/site.scss files/bart-p/css/site.css --style=compressed --no-source-map",
+    "styles:watch": "sass --watch files/bart-p/scss/site.scss:files/bart-p/css/site.css --style=expanded --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}

@@ -54,7 +54,7 @@ Work mobile-first. Complete the homepage before moving to the next page.
 - [x] Create a homepage Projects list module
 - [x] Limit the homepage project list to four entries
 - [x] Add the Projects module to the homepage
-- [ ] Review the complete homepage content structure
+- [x] Review the complete homepage content structure
 
 ### Design Foundation
 
