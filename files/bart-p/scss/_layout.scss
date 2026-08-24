@@ -11,11 +11,3 @@ main {
   display: grid;
   gap: clamp(4rem, 5vw, 10rem);
 }
-
-.mod_article {
-  border: 2px solid white;
-}
-
-.section {
-  padding-block: clamp(4rem, 8vw, 7rem);
-}

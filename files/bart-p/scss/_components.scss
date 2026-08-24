@@ -1,11 +1,42 @@
-.mod_navigation {
-  border: white solid 1px;
+body>header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "JetBrains Mono";
+  padding: 1rem 2rem 1rem 2rem;
+  border-bottom: var(--color-border) solid 1px;
 }
-// .site-nav {}
 
-// .button {}
-// .button--primary {}
-// .eyebrow {}
-// .project-card {}
-// .tag {}
-// .site-footer {}
+header .content-hyperlink figure {
+  margin: 0;
+}
+
+header .content-hyperlink img {
+  width: 4rem;
+  height: auto;
+}
+
+header .mod_navigation .active {
+  text-transform: uppercase;
+}
+
+header .mod_navigation li>.sibling:hover {
+  color: var(--color-text);
+}
+
+body.nav-is-mobile .navigation-main :is(a, strong) {
+  text-align: end;
+}
+
+.nav-wrapper {
+  --nav-color: var(--color-nav-text);
+  --nav-active-color: var(--color-primary);
+  --nav-mobile-background: var(--color-surface-elevated);
+  --nav-mobile-color: var(--color-text);
+  --nav-mobile-active-background: var(--color-surface);
+  --nav-mobile-active-color: var(--color-primary);
+  --nav-mobile-active-border-color: var(--color-primary);
+  --nav-mobile-separator-color: var(--color-border);
+  --nav-mobile-padding: 6rem clamp(1rem, 5vw, 2rem) 2rem;
+  --nav-burger-line-color: var(--color-primary);
+}
