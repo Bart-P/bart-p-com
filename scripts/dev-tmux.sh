@@ -99,8 +99,16 @@ create_window "4" "sass"
 activate_mise "$SESSION:4"
 tmux send-keys -t "$SESSION:4" "npm run styles:watch" C-m
 
+SERVER_STATUS="$(cd "$ROOT_DIR" && NO_COLOR=1 symfony server:status 2>&1)"
+
+if [[ "$SERVER_STATUS" == *"Not Running"* ]]; then
+  CONTAO_COMMAND="symfony server:start --no-tls"
+else
+  CONTAO_COMMAND="symfony server:log"
+fi
+
 create_window "5" "contao"
 activate_mise "$SESSION:5"
-tmux send-keys -t "$SESSION:5" "if symfony server:status >/dev/null 2>&1; then symfony server:log; else symfony server:start --no-tls; fi" C-m
+tmux send-keys -t "$SESSION:5" "$CONTAO_COMMAND" C-m
 
 tmux select-window -t "$SESSION:1"
