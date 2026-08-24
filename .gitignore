@@ -19,7 +19,6 @@
 /system/*
 !/system/config/
 /system/config/localconfig.php
-/templates/
 /var/
 
 # Skip files
