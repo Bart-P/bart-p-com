@@ -40,3 +40,35 @@ body.nav-is-mobile .navigation-main :is(a, strong) {
   --nav-mobile-padding: 6rem clamp(1rem, 5vw, 2rem) 2rem;
   --nav-burger-line-color: var(--color-primary);
 }
+
+body > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--color-border);
+  font-family: "JetBrains Mono", monospace;
+  color: var(--color-text-muted);
+}
+
+footer .content-text p {
+  margin: 0;
+}
+
+footer .content-hyperlink a {
+  color: var(--color-nav-text);
+  text-decoration: none;
+}
+
+footer .content-hyperlink a:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 30rem) {
+  body > footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
