@@ -4,3 +4,25 @@
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('files/bart-p/css/site.css') }}">
 {% endblock %}
+
+{% block body_content %}
+    {% slot header %}
+        <header>
+            <div class="container">
+                {{ slot() }}
+            </div>
+        </header>
+    {% endslot %}
+    {% slot main %}
+        <main>
+            {{ slot() }}
+        </main>
+    {% endslot %}
+    {% slot footer %}
+        <footer>
+            <div class="container">
+                {{ slot() }}
+            </div>
+        </footer>
+    {% endslot %}
+{% endblock %}

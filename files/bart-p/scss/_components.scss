@@ -1,11 +1,24 @@
+body>footer,
 body>header {
+  font-family: "JetBrains Mono";
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: var(--color-surface);
+}
+
+body>header {
+  border-bottom: var(--color-border) solid 1px;
+}
+
+body>footer {
+  border-top: var(--color-border) solid 1px;
+  color: var(--color-nav-text);
+}
+
+body>footer>.container,
+body>header>.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "JetBrains Mono";
-  padding: 1rem 2rem 1rem 2rem;
-  border-bottom: var(--color-border) solid 1px;
-  background-color: var(--color-surface);
 }
 
 header .content-hyperlink figure {
@@ -40,18 +53,6 @@ body.nav-is-mobile .navigation-main :is(a, strong) {
   --nav-mobile-separator-color: var(--color-border);
   --nav-mobile-padding: 6rem clamp(1rem, 5vw, 2rem) 2rem;
   --nav-burger-line-color: var(--color-primary);
-}
-
-body > footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1.5rem 2rem;
-  border-top: 1px solid var(--color-border);
-  background-color: var(--color-surface);
-  font-family: "JetBrains Mono", monospace;
-  color: var(--color-nav-text);
 }
 
 footer .content-text p {
