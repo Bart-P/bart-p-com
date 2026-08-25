@@ -1,7 +1,7 @@
 body>footer,
 body>header {
   font-family: "JetBrains Mono";
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
   background-color: var(--color-surface);
 }
 
@@ -21,6 +21,18 @@ body>header>.container {
   justify-content: space-between;
 }
 
+header .mod_navigation strong.active {
+  text-transform: uppercase;
+
+  &::before {
+    content: "[ ";
+  }
+
+  &::after {
+    content: " ]";
+  }
+}
+
 header .content-hyperlink figure {
   margin: 0;
 }
@@ -28,10 +40,6 @@ header .content-hyperlink figure {
 header .content-hyperlink img {
   width: 4rem;
   height: auto;
-}
-
-header .mod_navigation .active {
-  text-transform: uppercase;
 }
 
 header .mod_navigation li>.sibling:hover {
