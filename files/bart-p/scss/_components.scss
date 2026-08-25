@@ -5,6 +5,7 @@ body>header {
   font-family: "JetBrains Mono";
   padding: 1rem 2rem 1rem 2rem;
   border-bottom: var(--color-border) solid 1px;
+  background-color: var(--color-surface);
 }
 
 header .content-hyperlink figure {
@@ -48,8 +49,9 @@ body > footer {
   gap: 2rem;
   padding: 1.5rem 2rem;
   border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
   font-family: "JetBrains Mono", monospace;
-  color: var(--color-text-muted);
+  color: var(--color-nav-text);
 }
 
 footer .content-text p {
@@ -63,12 +65,4 @@ footer .content-hyperlink a {
 
 footer .content-hyperlink a:hover {
   color: var(--color-text);
-}
-
-@media (max-width: 30rem) {
-  body > footer {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
 }
