@@ -1,0 +1,26 @@
+body>footer {
+  font-family: "JetBrains Mono";
+  padding: 1rem;
+  border-top: var(--color-border) solid 1px;
+  background-color: var(--color-surface);
+  color: var(--color-nav-text);
+}
+
+body>footer>.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .content-text p {
+  margin: 0;
+}
+
+footer .content-hyperlink a {
+  color: var(--color-nav-text);
+  text-decoration: none;
+}
+
+footer .content-hyperlink a:hover {
+  color: var(--color-text);
+}

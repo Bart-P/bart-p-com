@@ -1,20 +1,10 @@
-body>footer,
 body>header {
   font-family: "JetBrains Mono";
-  padding: 1rem 2rem;
+  padding: 1rem;
+  border-bottom: var(--color-border) solid 1px;
   background-color: var(--color-surface);
 }
 
-body>header {
-  border-bottom: var(--color-border) solid 1px;
-}
-
-body>footer {
-  border-top: var(--color-border) solid 1px;
-  color: var(--color-nav-text);
-}
-
-body>footer>.container,
 body>header>.container {
   display: flex;
   align-items: center;
@@ -61,17 +51,4 @@ body.nav-is-mobile .navigation-main :is(a, strong) {
   --nav-mobile-separator-color: var(--color-border);
   --nav-mobile-padding: 6rem clamp(1rem, 5vw, 2rem) 2rem;
   --nav-burger-line-color: var(--color-primary);
-}
-
-footer .content-text p {
-  margin: 0;
-}
-
-footer .content-hyperlink a {
-  color: var(--color-nav-text);
-  text-decoration: none;
-}
-
-footer .content-hyperlink a:hover {
-  color: var(--color-text);
 }
