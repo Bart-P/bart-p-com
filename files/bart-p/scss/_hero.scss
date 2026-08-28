@@ -1,0 +1,83 @@
+@use "mixins" as mq;
+
+.hero {
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.hero>:not(.hero__scene) {
+  max-width: 64rem;
+  z-index: 1;
+}
+
+.hero--home {
+  min-height: calc(100svh - 6rem - 1px);
+  background-image: url('../assets/hero\ home\ stars\ earth\ moon.png');
+  background-size: cover;
+}
+
+.hero__content {
+  margin-top: 5%;
+
+  >.content-headline,
+  >.content-text,
+  >.content-hyperlink>a {
+    display: block;
+    background-color: var(--color-surface);
+    padding: .5rem 1rem;
+    opacity: .95;
+  }
+
+  >.content-headline {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  >.content-text {
+    h2 {
+      margin: 0;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .rte>:first-child {
+      margin-top: .5rem;
+    }
+
+    .rte>:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  >.content-text+.content-hyperlink {
+    margin-top: 2rem;
+  }
+
+  @include mq.md {
+
+    >.content-headline,
+    >.content-text,
+    >.content-hyperlink>a {
+      display: inline-block;
+    }
+
+    >.content-headline {
+      font-size: 5rem;
+    }
+
+    >.content-text h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @include mq.lg {
+    >.content-headline {
+      font-size: 8rem;
+    }
+
+    >.content-text h2 {
+      font-size: 4rem;
+    }
+  }
+}
