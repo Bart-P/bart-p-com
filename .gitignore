@@ -23,4 +23,5 @@
 
 # Skip files
 /system/modules/*/.skip
+/.php-cs-fixer.cache
 /.twig-cs-fixer.cache
