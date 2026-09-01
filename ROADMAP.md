@@ -59,25 +59,25 @@ Work mobile-first. Complete the homepage before moving to the next page.
 ### Design Foundation
 
 - [ ] Create version-controlled theme files
-- [ ] Create version-controlled Twig templates
-- [ ] Choose the initial visual direction
-- [ ] Define colors
-- [ ] Define typography
-- [ ] Define spacing and content widths
-- [ ] Style the base page container
+- [x] Create version-controlled Twig templates
+- [x] Choose the initial visual direction
+- [x] Define colors
+- [x] Define typography
+- [x] Define spacing and content widths
+- [x] Style the base page container
 
 ### Homepage Design
 
-- [ ] Build and style the header
-- [ ] Style the navigation
-- [ ] Style the hero
-- [ ] Style the hero links
+- [x] Build and style the header
+- [x] Style the navigation
+- [x] Style the hero
+- [x] Style the hero links
 - [ ] Design the reusable project preview
 - [ ] Style the homepage project list
-- [ ] Style the View Projects link
-- [ ] Build and style the footer
+- [x] Style the View Projects link
+- [x] Build and style the footer
 - [ ] Add project images if required by the design
-- [ ] Add responsive enhancements for larger screens
+- [x] Add responsive enhancements for larger screens
 - [ ] Test the homepage at narrow, medium, and wide widths
 - [ ] Check homepage headings, links, contrast, and keyboard navigation
 
@@ -88,10 +88,10 @@ Projects are stored as News records in the Projects archive. The homepage and Pr
 ### First Project
 
 - [ ] Define the standard project content structure
-- [ ] Complete one real project teaser
+- [x] Complete one real project teaser
 - [ ] Add its teaser image
 - [ ] Add its full project content
-- [ ] Add technologies used
+- [x] Add technologies used
 - [ ] Add project and source links where applicable
 - [ ] Decide how publication dates should be displayed
 - [ ] Decide whether homepage projects are selected using the Featured setting
@@ -158,7 +158,7 @@ Complete the content and form before designing the page.
 
 ## 6. Legal Pages
 
-- [ ] Create the Legal Notice page
+- [x] Create the Legal Notice page
 - [ ] Add the final Legal Notice content
 - [ ] Create the Privacy Policy page
 - [ ] Document contact-form data handling in the Privacy Policy
@@ -187,7 +187,7 @@ Complete the content and form before designing the page.
 - [ ] Test every page at common screen sizes
 - [ ] Test intermediate viewport widths
 - [ ] Review the complete site content
-- [ ] Create a database backup
+- [x] Create a database backup
 - [ ] Create a files backup
 
 ## 8. Hetzner Deployment

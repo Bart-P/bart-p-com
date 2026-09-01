@@ -23,3 +23,4 @@
 
 # Skip files
 /system/modules/*/.skip
+/.twig-cs-fixer.cache
