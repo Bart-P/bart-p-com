@@ -1,0 +1,28 @@
+.contact-list {
+  display: inline-flex;
+  gap: 2.5rem;
+  padding-inline: 1rem;
+  font-size: 1.25rem;
+}
+
+.contact-list > div > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  &::before {
+    content: "[ ";
+  }
+
+  &::after {
+    content: " ]";
+  }
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.contact-list > div:first-child > a {
+  color: var(--color-secondary);
+}
