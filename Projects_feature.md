@@ -11,7 +11,7 @@ This file is a working overview, not a strict specification. Decisions can chang
 - [x] Sort technologies alphabetically by name
 - [x] Add backend labels and field translations
 - [x] Test technology management in the backend
-- [ ] Create and register `TechnologyModel`
+- [x] Create and register `TechnologyModel`
 
 Technologies do not need their own `sorting` or `published` fields for now. Their order within a project will be stored in the project-technology relation.
 
@@ -21,9 +21,11 @@ Technologies do not need their own `sorting` or `published` fields for now. Thei
 
 Decide before implementing the project DCA:
 
-- [ ] Confirm that custom project records replace the existing News-based projects
-- [ ] Choose between a long-description field and Contao content elements
-- [ ] Choose between a dedicated gallery field and a gallery content element
+- [x] Confirm that custom project records replace the existing News-based projects
+- [x] Choose between a long-description field and Contao content elements
+- [x] Choose between a dedicated gallery field and a gallery content element
+
+Projects use dedicated `tl_project` records. Long-form project content and galleries use Contao content elements.
 
 Suggested project fields:
 
@@ -42,13 +44,13 @@ Use Contao image sizes to create thumbnails from the main image instead of stori
 
 ## 3. Project Backend
 
-- [ ] Create the `tl_project` DCA
-- [ ] Add validation and database indexes
-- [ ] Configure the backend list and operations
-- [ ] Add image selection using the Contao file manager
-- [ ] Add publishing controls
-- [ ] Register the project backend module
-- [ ] Add backend labels and field translations
+- [x] Create the `tl_project` DCA
+- [x] Add validation and database indexes
+- [x] Configure the backend list and operations
+- [x] Add image selection using the Contao file manager
+- [x] Add publishing controls
+- [x] Register the project backend module
+- [x] Add backend labels and field translations
 - [ ] Test project management in the backend
 
 ---
