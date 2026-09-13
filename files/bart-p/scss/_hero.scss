@@ -13,27 +13,44 @@
 
 .hero--home {
   min-height: calc(100svh - 6rem - 1px);
-  background-image: url('../assets/hero\ home\ stars\ earth\ moon.png');
-  background-size: cover;
+}
+
+.hero__scene {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero__earth {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(30%, 30%);
+}
+
+.hero__moon {
+  position: absolute;
+  right: 15rem;
+  bottom: 15rem;
 }
 
 .hero__content {
+  position: relative;
+  z-index: 1;
   margin-top: 5%;
 
   >.content-headline,
   >.content-text,
   >.content-hyperlink>a {
     display: block;
-    background-color: var(--color-surface);
+    background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
     padding: .5rem 1rem;
-    opacity: .95;
   }
 
   >.contact-list {
-    background-color: var(--color-surface);
+    background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
     margin-top: 1rem;
     padding: .5rem 1rem;
-    opacity: .95;
   }
 
   >.content-headline {

@@ -6,6 +6,39 @@
 {% endblock %}
 
 {% block body_content %}
+    <div class="page-scene" aria-hidden="true">
+        <div class="rocket">
+            <img class="rocket__image"
+                 src="{{ asset('files/bart-p/assets/rocket.png') }}"
+                 alt="">
+        </div>
+        <img class="asteroid asteroid--m2"
+             src="{{ asset('files/bart-p/assets/asteroid m 2.png') }}"
+             alt="">
+        <div class="asteroid-field">
+            <img class="asteroid asteroid--sm2"
+                 src="{{ asset('files/bart-p/assets/asteroid s 2.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--m1"
+                 src="{{ asset('files/bart-p/assets/asteroid m 1.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--sm1"
+                 src="{{ asset('files/bart-p/assets/asteroid s 1.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--l1"
+                 src="{{ asset('files/bart-p/assets/asteroid l 1.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--l2"
+                 src="{{ asset('files/bart-p/assets/asteroid l 2.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--xl1"
+                 src="{{ asset('files/bart-p/assets/asteroid xl 1.png') }}"
+                 alt="">
+            <img class="asteroid asteroid--xl2"
+                 src="{{ asset('files/bart-p/assets/asteroid xl 2.png') }}"
+                 alt="">
+        </div>
+    </div>
     {% slot header %}
         <header>
             <div class="container">

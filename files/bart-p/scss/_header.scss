@@ -2,7 +2,7 @@ body>header {
   font-family: "JetBrains Mono";
   padding: 1rem;
   border-bottom: var(--color-border) solid 1px;
-  background-color: var(--color-surface);
+  background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
 }
 
 body>header>.container {

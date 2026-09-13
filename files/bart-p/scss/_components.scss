@@ -1,5 +1,14 @@
 @use "mixins" as mq;
 
+.section-panel {
+  padding: 2rem;
+  background-color: color-mix(
+    in srgb,
+    var(--color-surface) 85%,
+    transparent
+  );
+}
+
 .contact-list {
   display: inline-flex;
   flex-wrap: wrap;

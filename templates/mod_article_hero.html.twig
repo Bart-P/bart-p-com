@@ -1,7 +1,12 @@
 {% extends '@Contao/mod_article.html.twig' %}
-
 {% block content %}
-    <div class="container hero__content">
-          {{ parent() }}
+    <div class="container hero__content">{{ parent() }}</div>
+    <div class="hero__scene" aria-hidden="true">
+        <img class="hero__moon"
+             src="{{ asset('files/bart-p/assets/moon.png') }}"
+             alt="">
+        <img class="hero__earth"
+             src="{{ asset('files/bart-p/assets/earth.png') }}"
+             alt="">
     </div>
 {% endblock %}

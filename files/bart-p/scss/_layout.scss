@@ -1,3 +1,114 @@
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+.page-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body > header,
+body > main,
+body > footer {
+  position: relative;
+  z-index: 1;
+}
+
+.asteroid {
+  position: absolute;
+}
+
+.asteroid-field {
+  position: absolute;
+  inset: 100svh 0 0;
+}
+
+.rocket {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  animation: rocket-launch 2.5s linear forwards;
+}
+
+.rocket__image {
+  offset-path: ellipse(1rem .25rem at center);
+  offset-rotate: 0deg;
+  animation: rocket-wiggle 8s linear 2.5s infinite;
+}
+
+@keyframes rocket-wiggle {
+  from { offset-distance: 0%; }
+  to   { offset-distance: 100%; }
+}
+
+@keyframes rocket-launch {
+  0%   { transform: translate(0, 0) rotate(-70deg); }
+  25%  { transform: translate(calc(-12.5vw + 1rem + 12.5%), calc(-3.75svh + 12.5%)) rotate(-80deg); }
+  50%  { transform: translate(calc(-25vw + 2rem + 25%), calc(-7.5svh + 25%)) rotate(-82deg); }
+  75%  {
+    transform: translate(calc(-42.5vw + 42.5%), calc(-12.75svh + 42.5%)) rotate(-40deg);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform:
+      translate(
+        calc(-50vw + 50%),
+        calc(-15svh + 50%)
+      )
+      rotate(0);
+  }
+}
+
+.asteroid--m2 {
+  top: 10rem;
+  left: 1rem;
+}
+
+.asteroid--sm1 {
+  top: 5%;
+  left: 10%;
+}
+
+.asteroid--sm2 {
+  top: 18%;
+  right: 12%;
+}
+
+.asteroid--xl1 {
+  top: 32%;
+  right: 3rem;
+}
+
+.asteroid--m1 {
+  top: 46%;
+  right: 28%;
+}
+
+.asteroid--l2 {
+  top: 60%;
+  right: -2rem;
+}
+
+.asteroid--xl2 {
+  top: 75%;
+  left: 18%;
+}
+
+.asteroid--l1 {
+  bottom: 3rem;
+  right: 15%;
+}
+
 .container {
   width: 100%;
   max-width: 76rem;
@@ -8,10 +119,11 @@ main {
   display: grid;
   gap: clamp(4rem, 5vw, 10rem);
   margin-inline: auto;
+  padding-bottom: clamp(4rem, 8vw, 8rem);
 }
 
 main > .mod_article:not(.hero) {
-  width: 100%;
+  width: calc(100% - 2rem);
   max-width: 64rem;
   margin-inline: auto;
 }
